@@ -2,7 +2,7 @@
 
 int main()
 {
-    std::cout << "Start with First Commit" << std::endl;
+    std::cout << "Start with First Commit?" << std::endl;
 
     return 0;
 }
