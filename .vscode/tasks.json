@@ -1,12 +1,16 @@
 {
 	"version": "2.0.0",
+	"runner": "terminal",
+	"type": "shell",
+	"echoCommand": true,
+	"presentation": {
+		"reveal": "always"
+	},
 	"tasks": [
 		{
-			"type": "shell",
 			"label": "g++.exe build active file",
 			"command": "g++",
 			"args": [
-				"-g",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -21,7 +25,6 @@
 		},
 		
 		{
-			"type": "shell",
 			"label": "Run",
 			"command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
 			"problemMatcher": [
