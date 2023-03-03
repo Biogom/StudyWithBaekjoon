@@ -1,13 +1,28 @@
 #include <iostream>
-#include <string>
+#include <vector>
+#include <algorithm>
 
 int main()
 {
-    std::string nickName;
+    std::vector<int> vec;
+    int N;
 
-    std::cout << "당신의 닉네임은? ";
-    std::cin >> nickName;
-    std::cout << "Welcome! " +  nickName << std::endl;
+    std::cin >> N;
+
+    for(int i = 0; i < N; ++i)
+    {
+        int tmp;
+        std::cin >> tmp;
+
+        vec.push_back(tmp);
+    }
+
+    std::sort(vec.begin(), vec.end(), std::less<int>());
+
+    for(auto n : vec)
+    {
+        std::cout << n << std::endl;
+    }
 
     return 0;
 }
