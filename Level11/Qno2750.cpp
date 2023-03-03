@@ -1,8 +1,13 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
-    std::cout << "Start with First Commit?" << std::endl;
+    std::string nickName;
+
+    std::cout << "당신의 닉네임은? ";
+    std::cin >> nickName;
+    std::cout << "Welcome! " +  nickName << std::endl;
 
     return 0;
 }
